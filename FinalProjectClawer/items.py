@@ -11,3 +11,5 @@ class AmazonItem(scrapy.Item):
     review_title = scrapy.Field()
     review_body = scrapy.Field()
     help_vote_num = scrapy.Field()
+    color = scrapy.Field()
+    num_star = scrapy.Field()

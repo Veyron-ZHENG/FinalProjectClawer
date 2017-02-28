@@ -6,7 +6,6 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 import json
-from scrapy.contrib.exporter import JsonLinesItemExporter
 
 class AmazonPipeline(object):
     def open_spider(self,spider):
@@ -19,3 +18,4 @@ class AmazonPipeline(object):
 
     def close_spider(self,spider):
         self.file.close()
+    pass
